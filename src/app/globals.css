@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --background: #9b60d1;
+  --foreground: #fff;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Sour Gummy", sans-serif;
+}
