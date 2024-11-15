@@ -6,8 +6,6 @@ import { useEffect, useState } from "react";
 export default function Two() {
   const [output, setOutput] = useState<string[]>([]);
 
-  const items = ["A", "B", "C", "D"];
-
   const writeItemsWithDelay = async (arr: string[]) => {
     let delay = 1000;
 
@@ -23,7 +21,7 @@ export default function Two() {
   };
 
   useEffect(() => {
-    writeItemsWithDelay(items);
+    writeItemsWithDelay(["A", "B", "C", "D"]);
   }, []);
 
   return (

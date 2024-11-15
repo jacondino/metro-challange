@@ -32,7 +32,7 @@ export default function Six() {
     <div className="flex flex-col items-center justify-center h-screen bg-gray-200">
       <HomeButton />
       <h1 className="text-[20px] m-4 text-black">
-        6 - Write the code that animates “Zeno's Paradox of Achilles and the
+        6 - Write the code that animates Zenos Paradox of Achilles and the
         Tortoise” on an interface(we would like to see the paradox
         demonstrated).
       </h1>

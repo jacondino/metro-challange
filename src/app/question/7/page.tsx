@@ -1,8 +1,15 @@
 import { HomeButton } from "@/components/HomeButton";
 
 export default function Seven() {
-  function getMaxValue(carrotTypes: any, capacity: number) {
-    carrotTypes.sort((a: any, b: any) => b.price / b.kg - a.price / a.kg);
+  interface CarrotType {
+    kg: number;
+    price: number;
+  }
+
+  function getMaxValue(carrotTypes: CarrotType[], capacity: number) {
+    carrotTypes.sort(
+      (a: CarrotType, b: CarrotType) => b.price / b.kg - a.price / a.kg
+    );
 
     let totalValue = 0;
 
